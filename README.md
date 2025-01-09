@@ -1,5 +1,5 @@
 # NDL5
-NDL5 es un decodificador y decodificador de base32 y base64 en TERMUX.
+NDL5 es un codificador y decodificador de base32 y base64 en TERMUX.
 
 <h2>Ejecución e instalación de NDL5</h2>
 <p>~ $ chmod +x NDL5 && mv NDL5 $PATH</p>

@@ -1,1 +1,167 @@
+echo ""
+echo ""
+echo -e "\033[0;666;32m ##      #  ######     #        ######## \033[0m"
+echo -e "\033[0;666;32m # #     #  #      #   #        #        \033[0m"
+echo -e "\033[0;666;32m #  #    #  #       #  #        ######## \033[0m"
+echo -e "\033[0;666;32m #   #   #  #       #  #                #\033[0m"
+echo -e "\033[0;666;32m #    #  #  #       #  #                #\033[0m"
+echo -e "\033[0;666;32m #     # #  #      #   #                #\033[0m"
+echo -e "\033[0;666;32m #      ##  ######     ######## ######## \033[0m"
+echo ""
+echo ""
+echo ""
+
+
+
+echo -e "\033[0;666;32mINF/NDL5:\033[0m\n\nCopie y pegue su código, y seleccione CTRL y oprima 'X' e oprima 'Y' e oprima la tecla '↵' para obtener su codificación y decodificación."
+echo ""
+echo ""
+echo -e "\033[0;666;32m[1]\033[0m CODIFICAR EN BASE32"
+echo ""
+echo -e "\033[0;666;32m[2]\033[0m CODIFICAR EN BASE64"
+echo ""
+echo -e "\033[0;666;32m[3]\033[0m DECODIFICAR DE BASE32"
+echo ""
+echo -e "\033[0;666;32m[4]\033[0m DECODIFICAR DE BASE64"
+echo ""
+echo -e "\033[0;666;32m[5]\033[0m SALIR"
+echo ""
+echo -e -n "\033[0;666;32m[-] Digite selección: \033[0m"
+read s
+
+
+if [ $s == 1 ]
+then
+
+
+echo -e "\033[0;666;32m\n\nOUTPUT/CODIFICACIÓN/BASE32:\n\n\033[0m"
+
+
+
+
+
+
+touch texto.ncf
+nano texto.ncf && base32 texto.ncf > texto.ndl5
+cat texto.ndl5 && rm -r texto.ncf texto.ndl5 && echo "" && echo "" && exit
+
+
+
+
+
+
+
+
+
+elif [ $s == 2 ]
+then
+
+
+echo -e "\033[0;666;32m\n\nOUTPUT/CODIFICACIÓN/BASE64:\n\n\033[0m"
+
+
+
+
+
+
+touch texto.ncf
+nano texto.ncf && base64 texto.ncf > texto.ndl5
+cat texto.ndl5 && rm -r texto.ncf texto.ndl5 && echo "" && echo "" && exit
+
+
+
+
+
+
+
+
+
+
+
+
+elif [ $s == 3 ]
+then
+
+
+
+echo -e "\033[0;666;32m\n\nOUTPUT/DECODIFICACIÓN/BASE32:\n\n\033[0m"
+
+
+
+
+
+touch texto.ncf
+nano texto.ncf && base32 --decode texto.ncf > texto.ndl5
+cat texto.ndl5 && rm -r texto.ncf texto.ndl5 && echo "" && echo "" && exit
+
+
+
+
+
+
+
+
+
+elif [ $s == 4 ]
+then
+
+
+
+
+
+
+echo -e "\033[0;666;32m\n\nOUTPUT/DECODIFICACIÓN/BASE64:\n\n\033[0m"
+
+
+
+
+
+touch texto.ncf
+nano texto.ncf && base64 --decode texto.ncf > texto.ndl5
+cat texto.ndl5 && rm -r texto.ncf texto.ndl5 && echo "" && echo "" && exit
+
+elif [ $s == 5 ]
+then
+
+
+
+echo -e "\033[0;666;32m\n\n[Saliendo de NDL5]\n\n\033[0m"
+
+exit
+
+
+
+
+
+
+else
+
+
+
+echo -e "\033[0;666;32m\n\n[ Indice incorrecto ]\033[0m"
+
+
+echo -e "\033[0;666;32m\n\n[Saliendo de NDL5]\n\n\033[0m"
+
+exit
+
+
+
+
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

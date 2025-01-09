@@ -2,6 +2,7 @@
 NDL5 es un codificador y decodificador de base32 y base64 en TERMUX.
 
 <h2>Ejecución e instalación de NDL5</h2>
+<p>~ $ git clone https://github.com/wolfkrypter/NDL5.git</p>
 <p>~ $ chmod +x NDL5 && mv NDL5 $PATH</p>
 <p>~ $ NDL5</p>
 <img src="https://i.imgur.com/z6yP7dX.jpeg" alt="EJECUCIÓN-NDL5">
